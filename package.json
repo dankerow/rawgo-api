@@ -1,0 +1,58 @@
+{
+  "name": "rawgo-api",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "description": "Easily create memes or apply different filters to images",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc --noEmit",
+    "start": "tsx .",
+    "dev": "nodemon --import tsx .",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "author": "Dan <hi@danmutombo.com>",
+  "license": "LGPL-3.0-only",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "canvas": "^2.11.2",
+    "fastify": "^4.28.1",
+    "gif-encoder": "^0.7.2",
+    "gif-encoder-2": "^1.0.5",
+    "gif-frames": "^1.0.1",
+    "jimp": "^0.22.12",
+    "mongodb": "^6.8.0",
+    "node-fetch": "^3.3.2",
+    "ofetch": "^1.3.4",
+    "sharp": "^0.33.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.7.0",
+    "@fastify/compress": "^7.0.3",
+    "@fastify/cors": "^9.0.1",
+    "@fastify/helmet": "^11.1.1",
+    "@fastify/rate-limit": "^9.1.0",
+    "@stylistic/eslint-plugin-ts": "^2.3.0",
+    "@types/node": "^20.14.10",
+    "c12": "^1.11.1",
+    "consola": "^3.2.3",
+    "dotenv": "^16.4.5",
+    "eslint": "^9.7.0",
+    "eslint-plugin-import": "^2.29.1",
+    "nodemon": "^3.1.4",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^7.16.1"
+  },
+  "nodemonConfig": {
+    "ext": "ts",
+    "watch": [
+      "src/*"
+    ],
+    "delay": 2500
+  },
+  "packageManager": "pnpm@9.5.0"
+}
