@@ -54,5 +54,5 @@
     ],
     "delay": 2500
   },
-  "packageManager": "pnpm@9.7.0"
+  "packageManager": "pnpm@9.7.1"
 }
