@@ -12,7 +12,7 @@ const server = new Server()
 try {
   await server.setup()
 } catch (error) {
-  handleError(error)
+  handleError(error as Error)
 }
 
 process.on('unhandledRejection', (err) =>
