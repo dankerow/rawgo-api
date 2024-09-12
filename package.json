@@ -1,6 +1,6 @@
 {
   "name": "rawgo-api",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "private": true,
   "description": "Easily create memes or apply different filters to images",
