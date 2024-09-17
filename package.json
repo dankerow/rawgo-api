@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "canvas": "^2.11.2",
-    "fastify": "^4.28.1",
+    "fastify": "^5.0.0",
     "gif-encoder": "^0.7.2",
     "gif-encoder-2": "^1.0.5",
     "gif-frames": "^1.0.1",
