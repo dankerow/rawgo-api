@@ -37,7 +37,7 @@
     "@fastify/rate-limit": "^9.1.0",
     "@stylistic/eslint-plugin-ts": "^2.8.0",
     "@types/node": "^20.16.5",
-    "c12": "^1.11.2",
+    "c12": "^2.0.4",
     "consola": "^3.2.3",
     "dotenv": "^16.4.5",
     "eslint": "^9.10.0",
