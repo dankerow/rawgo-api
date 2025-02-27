@@ -8,11 +8,18 @@
   "dependencyDashboard": true,
   "rebaseWhen": "conflicted",
   "ignoreDeps": [],
-  "labels": ["dependencies"],
+  "labels": [
+    "dependencies"
+  ],
   "packageRules": [
     {
-      "matchPackagePatterns": ["eslint"],
-      "labels": ["dependencies", "linting"]
+      "labels": [
+        "dependencies",
+        "linting"
+      ],
+      "matchPackageNames": [
+        "/eslint/"
+      ]
     }
   ],
   "prConcurrentLimit": 30,
