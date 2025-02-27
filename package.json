@@ -34,7 +34,7 @@
     "@fastify/compress": "^8.0.1",
     "@fastify/cors": "^11.0.0",
     "@fastify/helmet": "^13.0.1",
-    "@fastify/rate-limit": "^9.1.0",
+    "@fastify/rate-limit": "^10.2.2",
     "@stylistic/eslint-plugin-ts": "^2.13.0",
     "@types/node": "^20.17.19",
     "c12": "^1.11.2",
