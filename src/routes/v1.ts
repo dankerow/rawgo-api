@@ -22,7 +22,7 @@ export default class v1 extends Route {
   }
 
   routes(app: FastifyInstance, _options: RegisterOptions, done: DoneFuncWithErrOrRes) {
-    app.decorateRequest('endpoint', null)
+    app.decorateRequest('endpoint')
 
     const checkEndpoint = async (req: FastifyRequest<{ Params: IParams }>, reply: FastifyReply) => {
       const category = req.params.category
