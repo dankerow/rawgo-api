@@ -18,7 +18,7 @@
     "node": ">=20.18.3"
   },
   "dependencies": {
-    "canvas": "^2.11.2",
+    "canvas": "^3.1.0",
     "fastify": "^4.29.0",
     "gif-encoder": "^0.7.2",
     "gif-encoder-2": "^1.0.5",
