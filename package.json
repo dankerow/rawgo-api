@@ -15,7 +15,7 @@
   "author": "Dan <hi@danmutombo.com>",
   "license": "LGPL-3.0-only",
   "engines": {
-    "node": ">=20.18.3"
+    "node": ">=22.14.0"
   },
   "dependencies": {
     "canvas": "^2.11.2",
