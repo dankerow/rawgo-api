@@ -1,6 +1,7 @@
 import type { FastifyRequest, FastifyReply } from 'fastify'
 
-import Jimp from 'jimp'
+import type { JimpInstance } from 'jimp'
+import { Jimp } from 'jimp'
 import fetch from 'node-fetch'
 
 interface EndpointOptions {
@@ -34,20 +35,16 @@ export class Endpoint {
     throw new Error('Not implemented')
   }
 
-  jimpBuffer(image: Jimp, mime = Jimp.MIME_PNG): Promise<Buffer> {
-    return new Promise((resolve, reject) => {
-      image.getBuffer(mime, (error, buffer) => {
-        if (error) return reject(error)
-        resolve(buffer)
-      })
-    })
+  jimpBuffer(image: JimpInstance, mime: 'image/png' | 'image/jpeg' | 'image/bmp' | 'image/tiff' | 'image/gif' = 'image/png'): Promise<Buffer> {
+    return image.getBuffer(mime)
   }
 
-  async toBuffer(image: Jimp | string): Promise<ArrayBuffer | Buffer> {
+  async toBuffer(image: JimpInstance | string): Promise<ArrayBuffer | Buffer> {
     if (image instanceof Jimp) {
       return await this.jimpBuffer(image)
     } else if (typeof image === 'string') {
-      return await fetch(image).then((response) => response.arrayBuffer())
+      const response = await fetch(image)
+      return await response.arrayBuffer()
     } else {
       throw new Error('Unsupported class')
     }
