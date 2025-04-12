@@ -95,7 +95,7 @@ export default class v1 extends Route {
           }
         }
       }
-    }, async (req) => {
+    }, (req) => {
       const category = req.params.category
 
       return {
