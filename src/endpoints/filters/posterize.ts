@@ -1,5 +1,5 @@
 import { Endpoint } from '@/structures'
-import jimp from 'jimp'
+import { Jimp } from 'jimp'
 
 export default class Posterize extends Endpoint {
   constructor() {
@@ -20,11 +20,11 @@ export default class Posterize extends Endpoint {
   }
 
   async make(query: { image: string }) {
-    const image = await jimp.read(query.image)
+    const image = await Jimp.read(query.image)
 
     image
       .posterize(5)
 
-    return this.toBuffer(image)
+    return await image.getBuffer('image/png')
   }
 }

@@ -1,8 +1,5 @@
 import type { FastifyRequest, FastifyReply } from 'fastify'
 
-import Jimp from 'jimp'
-import fetch from 'node-fetch'
-
 interface EndpointOptions {
   name: string
   parameters: EndpointParameter[]
@@ -30,24 +27,14 @@ export class Endpoint {
   }
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  make(query: FastifyRequest['query'], reply: FastifyReply): Buffer | Promise<Buffer | ArrayBuffer> {
+  make(_query: FastifyRequest['query'], _reply: FastifyReply): Buffer | Promise<Buffer | ArrayBuffer> {
     throw new Error('Not implemented')
   }
 
-  jimpBuffer(image: Jimp, mime = Jimp.MIME_PNG): Promise<Buffer> {
-    return new Promise((resolve, reject) => {
-      image.getBuffer(mime, (error, buffer) => {
-        if (error) return reject(error)
-        resolve(buffer)
-      })
-    })
-  }
-
-  async toBuffer(image: Jimp | string): Promise<ArrayBuffer | Buffer> {
-    if (image instanceof Jimp) {
-      return await this.jimpBuffer(image)
-    } else if (typeof image === 'string') {
-      return await fetch(image).then((response) => response.arrayBuffer())
+  async toBuffer(image: string): Promise<ArrayBuffer | Buffer> {
+    if (typeof image === 'string') {
+      const response = await fetch(image)
+      return await response.arrayBuffer()
     } else {
       throw new Error('Unsupported class')
     }
