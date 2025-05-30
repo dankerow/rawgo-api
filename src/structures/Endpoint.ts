@@ -1,9 +1,5 @@
 import type { FastifyRequest, FastifyReply } from 'fastify'
 
-import type { JimpInstance } from 'jimp'
-import { Jimp } from 'jimp'
-import fetch from 'node-fetch'
-
 interface EndpointOptions {
   name: string
   parameters: EndpointParameter[]
@@ -31,18 +27,12 @@ export class Endpoint {
   }
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  make(query: FastifyRequest['query'], reply: FastifyReply): Buffer | Promise<Buffer | ArrayBuffer> {
+  make(_query: FastifyRequest['query'], _reply: FastifyReply): Buffer | Promise<Buffer | ArrayBuffer> {
     throw new Error('Not implemented')
   }
 
-  jimpBuffer(image: JimpInstance, mime: 'image/png' | 'image/jpeg' | 'image/bmp' | 'image/tiff' | 'image/gif' = 'image/png'): Promise<Buffer> {
-    return image.getBuffer(mime)
-  }
-
-  async toBuffer(image: JimpInstance | string): Promise<ArrayBuffer | Buffer> {
-    if (image instanceof Jimp) {
-      return await this.jimpBuffer(image)
-    } else if (typeof image === 'string') {
+  async toBuffer(image: string): Promise<ArrayBuffer | Buffer> {
+    if (typeof image === 'string') {
       const response = await fetch(image)
       return await response.arrayBuffer()
     } else {

@@ -25,6 +25,6 @@ export default class Posterize extends Endpoint {
     image
       .posterize(5)
 
-    return this.toBuffer(image)
+    return await image.getBuffer('image/png')
   }
 }
