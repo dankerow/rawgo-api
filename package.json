@@ -24,7 +24,7 @@
     "gif-encoder-2": "^1.0.5",
     "gif-frames": "^1.0.1",
     "jimp": "^1.6.0",
-    "mongodb": "^6.15.0",
+    "mongodb": "^6.16.0",
     "node-fetch": "^3.3.2",
     "ofetch": "^1.4.1",
     "sharp": "^0.34.1"
