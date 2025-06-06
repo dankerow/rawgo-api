@@ -31,21 +31,21 @@
     "gif-encoder-2": "^1.0.5",
     "gif-frames": "^1.0.1",
     "jimp": "^1.6.0",
-    "mongodb": "^6.16.0",
+    "mongodb": "^6.17.0",
     "node-fetch": "^3.3.2",
     "ofetch": "^1.4.1",
     "sharp": "^0.34.2",
     "tsx": "^4.19.4"
   },
   "devDependencies": {
-    "@eslint/js": "^9.27.0",
-    "@stylistic/eslint-plugin-ts": "^4.4.0",
-    "@types/node": "^22.15.28",
-    "eslint": "^9.27.0",
+    "@eslint/js": "^9.28.0",
+    "@stylistic/eslint-plugin-ts": "^4.4.1",
+    "@types/node": "^22.15.30",
+    "eslint": "^9.28.0",
     "eslint-plugin-import": "^2.31.0",
     "nodemon": "^3.1.10",
     "typescript": "^5.8.3",
-    "typescript-eslint": "^8.33.0"
+    "typescript-eslint": "^8.33.1"
   },
   "nodemonConfig": {
     "ext": "ts",
@@ -54,5 +54,5 @@
     ],
     "delay": 2500
   },
-  "packageManager": "pnpm@10.11.0"
+  "packageManager": "pnpm@10.11.1"
 }
