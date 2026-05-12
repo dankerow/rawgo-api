@@ -33,7 +33,7 @@ importers:
         specifier: ^16.6.1
         version: 16.6.1
       fastify:
-        specifier: ^5.5.0
+        specifier: ^5.8.5
         version: 5.8.5
       gif-encoder:
         specifier: ^0.7.2
@@ -5435,7 +5435,7 @@ snapshots:
 
   simple-update-notifier@2.0.0:
     dependencies:
-      semver: 7.7.2
+      semver: 7.8.0
 
   simple-xml-to-json@1.2.3: {}
 
