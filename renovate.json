@@ -5,6 +5,7 @@
     "group:allNonMajor",
     ":semanticCommitTypeAll(chore)"
   ],
+  "minimumReleaseAge": "25 hours",
   "dependencyDashboard": true,
   "rebaseWhen": "conflicted",
   "ignoreDeps": [],
