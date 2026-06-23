@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@fastify/compress':
-        specifier: ^8.3.1
-        version: 8.3.1
+        specifier: ^9.0.0
+        version: 9.0.0
       '@fastify/cors':
         specifier: ^11.2.0
         version: 11.2.0
@@ -46,7 +46,7 @@ importers:
         version: 1.0.1
       jimp:
         specifier: ^1.6.1
-        version: 1.6.1
+        version: 1.6.1(supports-color@5.5.0)
       mongodb:
         specifier: ^7.3.0
         version: 7.3.0
@@ -77,7 +77,7 @@ importers:
         version: 9.39.4(jiti@2.7.0)(supports-color@5.5.0)
       eslint-plugin-import:
         specifier: ^2.32.0
-        version: 2.32.0(@typescript-eslint/parser@8.62.0(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))(typescript@5.9.3))(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))
+        version: 2.32.0(@typescript-eslint/parser@8.62.0(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))(supports-color@5.5.0)(typescript@5.9.3))(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))
       nodemon:
         specifier: ^3.1.14
         version: 3.1.14
@@ -86,7 +86,7 @@ importers:
         version: 5.9.3
       typescript-eslint:
         specifier: ^8.62.0
-        version: 8.62.0(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))(typescript@5.9.3)
+        version: 8.62.0(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))(supports-color@5.5.0)(typescript@5.9.3)
 
 packages:
 
@@ -306,8 +306,8 @@ packages:
   '@fastify/ajv-compiler@4.0.5':
     resolution: {integrity: sha512-KoWKW+MhvfTRWL4qrhUwAAZoaChluo0m0vbiJlGMt2GXvL4LVPQEjt8kSpHI3IBq5Rez8fg+XeH3cneztq+C7A==}
 
-  '@fastify/compress@8.3.1':
-    resolution: {integrity: sha512-BUpItLr6MUX9e9ukg5Y6xekyA/7pBFG8QWtFCrUDm9ctoBc3R2/nA16yOaOWtVoccpXGjdDEYA/MxAb5+8cxag==}
+  '@fastify/compress@9.0.0':
+    resolution: {integrity: sha512-PZRg+ut5xd/ubsGPWfoPNryoCOtEdHboIWpDieTUHov1gKdLitF8mRmT3JbqNnRbelQXSNXUsIpakAEKR6AcTQ==}
 
   '@fastify/cors@11.2.0':
     resolution: {integrity: sha512-LbLHBuSAdGdSFZYTLVA3+Ch2t+sA6nq3Ejc6XLAKiQ6ViS2qFnvicpj0htsx03FyYeLs04HfRNBsz/a8SvbcUw==}
@@ -1160,9 +1160,6 @@ packages:
 
   duplexify@3.7.1:
     resolution: {integrity: sha512-07z8uv2wMyS51kKhD1KsdXJg5WQ6t93RneqRxUHnskXVtlYYkLqM0gqStQZ3pj073g687jPCHrqNfCzawLYh5g==}
-
-  duplexify@4.1.3:
-    resolution: {integrity: sha512-M3BmBhwJRZsSx38lZyhE53Csddgzl5R7xGJNk7CVddZD6CcmwMCH8J+7AprIrQKH7TonKxaCjcv27Qmf+sQ+oA==}
 
   ecc-jsbn@0.1.2:
     resolution: {integrity: sha512-eh9O+hwRHNbG4BLTjEl3nw044CkGm5X6LoaCf7LPp7UU8Qrt47JYNi6nPX8xjW97TKGKm1ouctg0QSpZe9qrnw==}
@@ -2198,9 +2195,6 @@ packages:
   pump@3.0.0:
     resolution: {integrity: sha512-LwZy+p3SFs1Pytd/jYct4wpv49HiYCqd9Rlc5ZVdk0V+8Yzv6jR5Blk3TRmPL1ft69TxP0IMZGJ+WPFU2BFhww==}
 
-  pumpify@2.0.1:
-    resolution: {integrity: sha512-m7KOje7jZxrmutanlkS1daj1dS6z6BgslzOXmcSEpIlCxM3VJH7lG5QLeck/6hgF6F4crFf01UtQmNsJfweTAw==}
-
   punycode@2.3.1:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
@@ -2875,15 +2869,13 @@ snapshots:
       ajv-formats: 3.0.1(ajv@8.20.0)
       fast-uri: 3.1.2
 
-  '@fastify/compress@8.3.1':
+  '@fastify/compress@9.0.0':
     dependencies:
       '@fastify/accept-negotiator': 2.0.1
       fastify-plugin: 5.0.1
       mime-db: 1.52.0
       minipass: 7.1.2
       peek-stream: 1.1.3
-      pump: 3.0.0
-      pumpify: 2.0.1
       readable-stream: 4.7.0
 
   '@fastify/cors@11.2.0':
@@ -3038,14 +3030,14 @@ snapshots:
   '@img/sharp-win32-x64@0.35.2':
     optional: true
 
-  '@jimp/core@1.6.1':
+  '@jimp/core@1.6.1(supports-color@5.5.0)':
     dependencies:
       '@jimp/file-ops': 1.6.1
       '@jimp/types': 1.6.1
       '@jimp/utils': 1.6.1
       await-to-js: 3.0.0
       exif-parser: 0.1.12
-      file-type: 21.3.4
+      file-type: 21.3.4(supports-color@5.5.0)
       mime: 3.0.0
     transitivePeerDependencies:
       - supports-color
@@ -3063,7 +3055,7 @@ snapshots:
 
   '@jimp/js-bmp@1.6.1':
     dependencies:
-      '@jimp/core': 1.6.1
+      '@jimp/core': 1.6.1(supports-color@5.5.0)
       '@jimp/types': 1.6.1
       '@jimp/utils': 1.6.1
       bmp-ts: 1.0.9
@@ -3072,7 +3064,7 @@ snapshots:
 
   '@jimp/js-gif@1.6.1':
     dependencies:
-      '@jimp/core': 1.6.1
+      '@jimp/core': 1.6.1(supports-color@5.5.0)
       '@jimp/types': 1.6.1
       gifwrap: 0.10.1
       omggif: 1.0.10
@@ -3081,7 +3073,7 @@ snapshots:
 
   '@jimp/js-jpeg@1.6.1':
     dependencies:
-      '@jimp/core': 1.6.1
+      '@jimp/core': 1.6.1(supports-color@5.5.0)
       '@jimp/types': 1.6.1
       jpeg-js: 0.4.4
     transitivePeerDependencies:
@@ -3089,7 +3081,7 @@ snapshots:
 
   '@jimp/js-png@1.6.1':
     dependencies:
-      '@jimp/core': 1.6.1
+      '@jimp/core': 1.6.1(supports-color@5.5.0)
       '@jimp/types': 1.6.1
       pngjs: 7.0.0
     transitivePeerDependencies:
@@ -3097,7 +3089,7 @@ snapshots:
 
   '@jimp/js-tiff@1.6.1':
     dependencies:
-      '@jimp/core': 1.6.1
+      '@jimp/core': 1.6.1(supports-color@5.5.0)
       '@jimp/types': 1.6.1
       utif2: 4.1.0
     transitivePeerDependencies:
@@ -3111,7 +3103,7 @@ snapshots:
 
   '@jimp/plugin-blur@1.6.1':
     dependencies:
-      '@jimp/core': 1.6.1
+      '@jimp/core': 1.6.1(supports-color@5.5.0)
       '@jimp/utils': 1.6.1
     transitivePeerDependencies:
       - supports-color
@@ -3123,7 +3115,7 @@ snapshots:
 
   '@jimp/plugin-color@1.6.1':
     dependencies:
-      '@jimp/core': 1.6.1
+      '@jimp/core': 1.6.1(supports-color@5.5.0)
       '@jimp/types': 1.6.1
       '@jimp/utils': 1.6.1
       tinycolor2: 1.6.0
@@ -3133,7 +3125,7 @@ snapshots:
 
   '@jimp/plugin-contain@1.6.1':
     dependencies:
-      '@jimp/core': 1.6.1
+      '@jimp/core': 1.6.1(supports-color@5.5.0)
       '@jimp/plugin-blit': 1.6.1
       '@jimp/plugin-resize': 1.6.1
       '@jimp/types': 1.6.1
@@ -3144,7 +3136,7 @@ snapshots:
 
   '@jimp/plugin-cover@1.6.1':
     dependencies:
-      '@jimp/core': 1.6.1
+      '@jimp/core': 1.6.1(supports-color@5.5.0)
       '@jimp/plugin-crop': 1.6.1
       '@jimp/plugin-resize': 1.6.1
       '@jimp/types': 1.6.1
@@ -3154,7 +3146,7 @@ snapshots:
 
   '@jimp/plugin-crop@1.6.1':
     dependencies:
-      '@jimp/core': 1.6.1
+      '@jimp/core': 1.6.1(supports-color@5.5.0)
       '@jimp/types': 1.6.1
       '@jimp/utils': 1.6.1
       zod: 3.24.4
@@ -3184,7 +3176,7 @@ snapshots:
 
   '@jimp/plugin-hash@1.6.1':
     dependencies:
-      '@jimp/core': 1.6.1
+      '@jimp/core': 1.6.1(supports-color@5.5.0)
       '@jimp/js-bmp': 1.6.1
       '@jimp/js-jpeg': 1.6.1
       '@jimp/js-png': 1.6.1
@@ -3204,7 +3196,7 @@ snapshots:
 
   '@jimp/plugin-print@1.6.1':
     dependencies:
-      '@jimp/core': 1.6.1
+      '@jimp/core': 1.6.1(supports-color@5.5.0)
       '@jimp/js-jpeg': 1.6.1
       '@jimp/js-png': 1.6.1
       '@jimp/plugin-blit': 1.6.1
@@ -3224,7 +3216,7 @@ snapshots:
 
   '@jimp/plugin-resize@1.6.1':
     dependencies:
-      '@jimp/core': 1.6.1
+      '@jimp/core': 1.6.1(supports-color@5.5.0)
       '@jimp/types': 1.6.1
       zod: 3.24.4
     transitivePeerDependencies:
@@ -3232,7 +3224,7 @@ snapshots:
 
   '@jimp/plugin-rotate@1.6.1':
     dependencies:
-      '@jimp/core': 1.6.1
+      '@jimp/core': 1.6.1(supports-color@5.5.0)
       '@jimp/plugin-crop': 1.6.1
       '@jimp/plugin-resize': 1.6.1
       '@jimp/types': 1.6.1
@@ -3243,7 +3235,7 @@ snapshots:
 
   '@jimp/plugin-threshold@1.6.1':
     dependencies:
-      '@jimp/core': 1.6.1
+      '@jimp/core': 1.6.1(supports-color@5.5.0)
       '@jimp/plugin-color': 1.6.1
       '@jimp/plugin-hash': 1.6.1
       '@jimp/types': 1.6.1
@@ -3293,7 +3285,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@tokenizer/inflate@0.4.1':
+  '@tokenizer/inflate@0.4.1(supports-color@5.5.0)':
     dependencies:
       debug: 4.4.3(supports-color@5.5.0)
       token-types: 6.1.2
@@ -3320,12 +3312,12 @@ snapshots:
     dependencies:
       '@types/webidl-conversions': 7.0.3
 
-  '@typescript-eslint/eslint-plugin@8.62.0(@typescript-eslint/parser@8.62.0(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))(typescript@5.9.3))(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))(typescript@5.9.3)':
+  '@typescript-eslint/eslint-plugin@8.62.0(@typescript-eslint/parser@8.62.0(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))(supports-color@5.5.0)(typescript@5.9.3))(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))(supports-color@5.5.0)(typescript@5.9.3)':
     dependencies:
       '@eslint-community/regexpp': 4.12.2
-      '@typescript-eslint/parser': 8.62.0(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))(typescript@5.9.3)
+      '@typescript-eslint/parser': 8.62.0(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))(supports-color@5.5.0)(typescript@5.9.3)
       '@typescript-eslint/scope-manager': 8.62.0
-      '@typescript-eslint/type-utils': 8.62.0(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))(typescript@5.9.3)
+      '@typescript-eslint/type-utils': 8.62.0(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))(supports-color@5.5.0)(typescript@5.9.3)
       '@typescript-eslint/utils': 8.62.0(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))(typescript@5.9.3)
       '@typescript-eslint/visitor-keys': 8.62.0
       eslint: 9.39.4(jiti@2.7.0)(supports-color@5.5.0)
@@ -3336,7 +3328,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/parser@8.62.0(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))(typescript@5.9.3)':
+  '@typescript-eslint/parser@8.62.0(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))(supports-color@5.5.0)(typescript@5.9.3)':
     dependencies:
       '@typescript-eslint/scope-manager': 8.62.0
       '@typescript-eslint/types': 8.62.0
@@ -3388,7 +3380,7 @@ snapshots:
     dependencies:
       typescript: 5.9.3
 
-  '@typescript-eslint/type-utils@8.62.0(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))(typescript@5.9.3)':
+  '@typescript-eslint/type-utils@8.62.0(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))(supports-color@5.5.0)(typescript@5.9.3)':
     dependencies:
       '@typescript-eslint/types': 8.62.0
       '@typescript-eslint/typescript-estree': 8.62.0(typescript@5.9.3)
@@ -3875,13 +3867,6 @@ snapshots:
       readable-stream: 2.3.8
       stream-shift: 1.0.3
 
-  duplexify@4.1.3:
-    dependencies:
-      end-of-stream: 1.4.4
-      inherits: 2.0.4
-      readable-stream: 3.6.2
-      stream-shift: 1.0.3
-
   ecc-jsbn@0.1.2:
     dependencies:
       jsbn: 0.1.1
@@ -4085,17 +4070,17 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.12.1(@typescript-eslint/parser@8.62.0(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))(typescript@5.9.3))(eslint-import-resolver-node@0.3.9)(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0)):
+  eslint-module-utils@2.12.1(@typescript-eslint/parser@8.62.0(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))(supports-color@5.5.0)(typescript@5.9.3))(eslint-import-resolver-node@0.3.9)(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0)):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
-      '@typescript-eslint/parser': 8.62.0(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))(typescript@5.9.3)
+      '@typescript-eslint/parser': 8.62.0(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))(supports-color@5.5.0)(typescript@5.9.3)
       eslint: 9.39.4(jiti@2.7.0)(supports-color@5.5.0)
       eslint-import-resolver-node: 0.3.9
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.62.0(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))(typescript@5.9.3))(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0)):
+  eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.62.0(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))(supports-color@5.5.0)(typescript@5.9.3))(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0)):
     dependencies:
       '@rtsao/scc': 1.1.0
       array-includes: 3.1.9
@@ -4106,7 +4091,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 9.39.4(jiti@2.7.0)(supports-color@5.5.0)
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.12.1(@typescript-eslint/parser@8.62.0(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))(typescript@5.9.3))(eslint-import-resolver-node@0.3.9)(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))
+      eslint-module-utils: 2.12.1(@typescript-eslint/parser@8.62.0(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))(supports-color@5.5.0)(typescript@5.9.3))(eslint-import-resolver-node@0.3.9)(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))
       hasown: 2.0.2
       is-core-module: 2.16.1
       is-glob: 4.0.3
@@ -4118,7 +4103,7 @@ snapshots:
       string.prototype.trimend: 1.0.9
       tsconfig-paths: 3.15.0
     optionalDependencies:
-      '@typescript-eslint/parser': 8.62.0(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))(typescript@5.9.3)
+      '@typescript-eslint/parser': 8.62.0(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))(supports-color@5.5.0)(typescript@5.9.3)
     transitivePeerDependencies:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
@@ -4284,9 +4269,9 @@ snapshots:
     dependencies:
       flat-cache: 4.0.1
 
-  file-type@21.3.4:
+  file-type@21.3.4(supports-color@5.5.0):
     dependencies:
-      '@tokenizer/inflate': 0.4.1
+      '@tokenizer/inflate': 0.4.1(supports-color@5.5.0)
       strtok3: 10.3.5
       token-types: 6.1.2
       uint8array-extras: 1.5.0
@@ -4724,9 +4709,9 @@ snapshots:
 
   isstream@0.1.2: {}
 
-  jimp@1.6.1:
+  jimp@1.6.1(supports-color@5.5.0):
     dependencies:
-      '@jimp/core': 1.6.1
+      '@jimp/core': 1.6.1(supports-color@5.5.0)
       '@jimp/diff': 1.6.1
       '@jimp/js-bmp': 1.6.1
       '@jimp/js-gif': 1.6.1
@@ -5122,12 +5107,6 @@ snapshots:
     dependencies:
       end-of-stream: 1.4.4
       once: 1.4.0
-
-  pumpify@2.0.1:
-    dependencies:
-      duplexify: 4.1.3
-      inherits: 2.0.4
-      pump: 3.0.0
 
   punycode@2.3.1: {}
 
@@ -5684,10 +5663,10 @@ snapshots:
       possible-typed-array-names: 1.0.0
       reflect.getprototypeof: 1.0.10
 
-  typescript-eslint@8.62.0(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))(typescript@5.9.3):
+  typescript-eslint@8.62.0(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))(supports-color@5.5.0)(typescript@5.9.3):
     dependencies:
-      '@typescript-eslint/eslint-plugin': 8.62.0(@typescript-eslint/parser@8.62.0(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))(typescript@5.9.3))(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))(typescript@5.9.3)
-      '@typescript-eslint/parser': 8.62.0(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))(typescript@5.9.3)
+      '@typescript-eslint/eslint-plugin': 8.62.0(@typescript-eslint/parser@8.62.0(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))(supports-color@5.5.0)(typescript@5.9.3))(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))(supports-color@5.5.0)(typescript@5.9.3)
+      '@typescript-eslint/parser': 8.62.0(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))(supports-color@5.5.0)(typescript@5.9.3)
       '@typescript-eslint/typescript-estree': 8.62.0(typescript@5.9.3)
       '@typescript-eslint/utils': 8.62.0(eslint@9.39.4(jiti@2.7.0)(supports-color@5.5.0))(typescript@5.9.3)
       eslint: 9.39.4(jiti@2.7.0)(supports-color@5.5.0)
