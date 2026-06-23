@@ -21,7 +21,7 @@
     "@fastify/compress": "^9.0.0",
     "@fastify/cors": "^11.2.0",
     "@fastify/helmet": "^13.0.2",
-    "@fastify/rate-limit": "^10.3.0",
+    "@fastify/rate-limit": "^11.0.0",
     "c12": "^3.3.4",
     "canvas": "^3.2.3",
     "consola": "^3.4.2",
