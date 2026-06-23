@@ -3,6 +3,7 @@
   "extends": [
     "config:recommended",
     "group:allNonMajor",
+    ":maintainLockFilesWeekly",
     ":semanticCommitTypeAll(chore)"
   ],
   "minimumReleaseAge": "25 hours",
