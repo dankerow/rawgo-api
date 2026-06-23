@@ -1,4 +1,4 @@
-onlyBuiltDependencies:
-  - canvas
-  - esbuild
-  - sharp
+allowBuilds:
+  canvas: true
+  esbuild: true
+  sharp: true
