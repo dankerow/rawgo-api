@@ -18,10 +18,10 @@
     "node": ">=20.20.2"
   },
   "dependencies": {
-    "@fastify/compress": "^9.0.0",
-    "@fastify/cors": "^11.2.0",
-    "@fastify/helmet": "^13.0.2",
-    "@fastify/rate-limit": "^11.0.0",
+    "@fastify/compress": "^9.2.0",
+    "@fastify/cors": "^11.3.0",
+    "@fastify/helmet": "^13.1.1",
+    "@fastify/rate-limit": "^11.2.0",
     "c12": "^3.3.4",
     "canvas": "^3.2.3",
     "consola": "^3.4.2",
@@ -31,21 +31,21 @@
     "gif-encoder-2": "^1.0.5",
     "gif-frames": "^1.0.1",
     "jimp": "^1.6.1",
-    "mongodb": "^7.3.0",
+    "mongodb": "^7.6.0",
     "node-fetch": "^3.3.2",
     "ofetch": "^1.5.1",
-    "sharp": "^0.35.2",
-    "tsx": "^4.22.4"
+    "sharp": "^0.35.4",
+    "tsx": "^4.23.13"
   },
   "devDependencies": {
-    "@eslint/js": "^9.39.4",
+    "@eslint/js": "^9.39.5",
     "@stylistic/eslint-plugin-ts": "^4.4.1",
-    "@types/node": "^22.20.0",
-    "eslint": "^9.39.4",
+    "@types/node": "^22.20.1",
+    "eslint": "^9.39.5",
     "eslint-plugin-import": "^2.32.0",
     "nodemon": "^3.1.14",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.62.0"
+    "typescript-eslint": "^8.69.0"
   },
   "nodemonConfig": {
     "ext": "ts",
@@ -54,5 +54,5 @@
     ],
     "delay": 2500
   },
-  "packageManager": "pnpm@11.8.0"
+  "packageManager": "pnpm@11.25.0"
 }
